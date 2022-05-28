@@ -1,0 +1,982 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+/* Hero Start */
+.hero {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("./images/bilem-hotel-stok-1.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url("./images/stok-photo-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  margin-bottom: 10rem;
+}
+
+.hero-wrapper nav {
+  display: flex;
+  padding-top: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6rem;
+  align-items: center;
+  width: 80%;
+}
+
+.hero ul li {
+  list-style-type: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+nav select {
+  background-color: #bd9b72;
+  color: #fff;
+  height: 2rem;
+  border: none;
+  outline: none;
+}
+
+.hero-content {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.hero-content h3 {
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero-content h3 span {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero-content::before {
+  content: "";
+  width: 4rem;
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(90deg);
+  margin-bottom: 3rem;
+}
+
+.hero-content::after {
+  content: "";
+  width: 4rem;
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(90deg);
+  margin-top: 3rem;
+}
+
+.hero i {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.3rem;
+  color: #fff;
+}
+/* Hero End */
+
+/* Hakkımızda Start */
+.hakkimizda {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.hakkimizda img {
+  max-width: 1010px;
+  max-height: 750px;
+  width: 65%;
+}
+
+.hakkimizda-wrapper {
+  background-color: #fff;
+  margin-left: -8rem;
+  padding: 3rem;
+  width: 40%;
+  max-width: 640px;
+  /* height: 560px;
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.hakkimizda-wrapper h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.hakkimizda-wrapper h3 {
+  font-size: 5vw;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hakkimizda-wrapper p {
+  width: 75%;
+}
+/* Hakkımızda End */
+
+/* Otel Odalarımız Start */
+.odalarimiz {
+  width: 100%;
+}
+
+.odalarimiz h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+.odalarimiz h3 span {
+  font-size: 7rem;
+}
+
+.odalarimiz-wrapper {
+  display: flex;
+  height: 40rem;
+  width: 100%;
+}
+
+.oda {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 25%;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.oda p {
+  position: absolute;
+  bottom: 20%;
+  left: -20%;
+  font-size: 3rem;
+  color: #fff;
+  font-style: italic;
+  transform: rotate(-90deg);
+}
+
+.oda-meta {
+  color: #fff;
+  position: absolute;
+  bottom: 5%;
+  left: 18%;
+  margin-left: 20px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.oda-meta h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.oda-meta ul {
+  list-style-type: disc;
+}
+
+.oda1 {
+  background-image: url("./images/stok-hotel-room-1.png");
+}
+
+.oda2 {
+  background-image: url("./images/stok-hotel-room-2.png");
+}
+.oda3 {
+  background-image: url("./images/stok-hotel-room-3.jpg");
+}
+.oda4 {
+  background-image: url("./images/stok-hotel-room-4.jpg");
+}
+
+.oda1Bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/stok-hotel-room-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.oda2Bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/stok-hotel-room-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.oda3Bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/stok-hotel-room-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.oda4Bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/stok-hotel-room-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* Otel Odalarımız End */
+
+/* Hizmetlerimiz Start */
+.hizmetlerimiz {
+  width: 100%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.hizmetlerimiz h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.hizmetlerimiz h3 span {
+  font-size: 7rem;
+}
+
+.hizmetlerimiz p {
+  text-align: center;
+}
+
+.hizmetlerimiz-p {
+  font-size: 1rem;
+  text-align: center;
+  width: 43%;
+  margin: auto;
+  margin-bottom: 4rem;
+  font-weight: 300;
+}
+
+.hizmetlerimiz-wrapper {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.upper-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.upper-left {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+}
+
+.upper-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.upper-left-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.left-1 {
+  width: 365px;
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/stok-fitness");
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-2 {
+  width: 365px;
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/stok-photo-havuz.jpg");
+  background-position: right 30%;
+  background-size: cover;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-left-right {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("./images/stok-hamam.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.upper-right-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/stok-beach.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.upper-right-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/stok-teras.webp");
+  background-position: center 70%;
+  background-size: cover;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.bottom-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.bottom-right-wrapper {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+}
+
+.bottom-left-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bottom-left-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/stok-cocuk-havuzu.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  height: 300px;
+  text-align: center;
+}
+
+.bottom-left-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/stok-spa.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  height: 300px;
+}
+
+.bottom-right-left {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/stok-meyhane.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom-right-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bottom-right-1 {
+  width: 365px;
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./images/stok-otopark.jpg");
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-right-2 {
+  width: 365px;
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./images/stok-bahce.webp");
+  display: flex;
+  font-size: 3rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+/* Hizmetlerimiz End */
+
+/* BLM Beach Start */
+.blm-beach {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.blm-beach img {
+  max-width: 1010px;
+  max-height: 950px;
+  width: 65%;
+}
+
+.blm-beach-wrapper {
+  background-color: #fff;
+  margin-left: -8rem;
+  padding: 3rem;
+  width: 40%;
+  max-width: 740px;
+  /* height: 560px;
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.blm-beach-wrapper h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.blm-beach-wrapper h3 {
+  font-size: 5vw;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.blm-beach-wrapper p {
+  width: 75%;
+}
+/* BLM Beach End */
+
+/* Meyhane Start */
+.meyhane-wrapper {
+  background-color: #fff;
+  margin-left: 9rem;
+  margin-bottom: -20rem;
+  padding: 3rem;
+  width: 40%;
+  /* height: 560px;
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  z-index: 50;
+}
+
+.meyhane h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.meyhane h3 {
+  font-size: 4vw;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.meyhane-img {
+  background-image: url("./images/stok-meyhane.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  width: 100%;
+  height: 35rem;
+  z-index: -50;
+  position: relative;
+  margin-bottom: 10rem;
+}
+/* Meyhane End */
+
+/* Galeri Start */
+.galeri {
+  width: 100%;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.galeri h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.galeri h3 span {
+  font-size: 7rem;
+}
+
+.galeri-p {
+  font-size: 1rem;
+  text-align: center;
+  width: 43%;
+  margin: auto;
+  margin-bottom: 4rem;
+  font-weight: 300;
+}
+
+.galeri-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.galeri-wrapper img {
+  width: 33.3333%;
+}
+/* Galeri End */
+
+/* Footer Start */
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer img {
+  margin: auto;
+}
+
+.footer-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+.footer-wrapper div {
+  width: 200px;
+}
+
+.footer-wrapper h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.footer-wrapper h3 {
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.footer-wrapper p {
+  margin-bottom: 0.75rem;
+}
+/* Footer End */
+
+/* Responsive Start */
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+
+  .oda p {
+    font-size: 2.5rem;
+    bottom: 15%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .left-1,
+  .left-2,
+  .bottom-right-1,
+  .bottom-right-2 {
+    width: 292px;
+    height: 240px;
+  }
+
+  .upper-left {
+    width: 65%;
+  }
+  .upper-right {
+    width: 35%;
+  }
+
+  .bottom-left-1,
+  .bottom-left-2 {
+    height: 50%;
+  }
+
+  .bottom-left-wrapper {
+    width: 35%;
+  }
+
+  .bottom-right-wrapper {
+    width: 65%;
+  }
+
+  .hakkimizda img,
+  .blm-beach img {
+    width: 80%;
+  }
+
+  .hakkimizda-wrapper,
+  .blm-beach-wrapper {
+    margin-left: -10rem;
+  }
+
+  .hakkimizda-wrapper p,
+  .blm-beach-wrapper p {
+    width: 100%;
+  }
+
+  nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul li img {
+    width: 70%;
+    margin: auto;
+  }
+
+  .odalarimiz-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .oda {
+    width: 50%;
+  }
+
+  .oda p {
+    left: -10%;
+    bottom: 30%;
+  }
+
+  .oda-meta {
+    left: 15%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+
+  .hakkimizda img,
+  .blm-beach img {
+    width: 65%;
+  }
+
+  .hakkimizda-wrapper,
+  .blm-beach-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .hero ul {
+    margin: 0 2rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .hero ul {
+    display: none;
+  }
+  .mobile-logo {
+    display: block;
+  }
+
+  nav select {
+    position: absolute;
+    right: 3%;
+  }
+
+  .left-1,
+  .left-2,
+  .bottom-right-1,
+  .bottom-right-2 {
+    width: 175.2px;
+    height: 144px;
+  }
+
+  .meyhane-wrapper {
+    width: 60%;
+    margin-bottom: -12rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hizmetlerimiz-wrapper,
+  .upper-wrapper,
+  .upper-left,
+  .upper-left-left,
+  .upper-right,
+  .bottom-wrapper,
+  .bottom-left-wrapper,
+  .bottom-right-wrapper,
+  .bottom-right-right-wrapper {
+    gap: 0.5rem;
+  }
+
+  .footer-wrapper {
+    gap: 0;
+  }
+
+  .hakkimizda,
+  .blm-beach {
+    flex-direction: column;
+    box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+  }
+
+  .hakkimizda-wrapper,
+  .blm-beach-wrapper {
+    margin-left: 0;
+    box-shadow: none;
+  }
+
+  .hakkimizda img,
+  .blm-beach img {
+    width: 100%;
+  }
+
+  .oda-meta {
+    left: 25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .odalarimiz-wrapper {
+    height: auto;
+  }
+
+  .oda {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .oda p {
+    font-size: 2rem;
+    left: -8%;
+    bottom: 35%;
+  }
+
+  .oda-meta {
+    left: 10%;
+    bottom: 10%;
+  }
+
+  .hizmetlerimiz h3 span,
+  .odalarimiz h3 span,
+  .galeri h3 span {
+    font-size: 5rem;
+  }
+
+  .bottom-left-1,
+  .bottom-left-2,
+  .bottom-right-left,
+  .bottom-right-1,
+  .bottom-right-2,
+  .left-1,
+  .left-2,
+  .upper-left-right,
+  .upper-right-1,
+  .upper-right-2 {
+    font-size: 2rem;
+  }
+
+  .footer-wrapper div {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .galeri-p {
+    width: 75%;
+  }
+
+  .meyhane-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .upper-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .bottom-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .upper-left,
+  .upper-right,
+  .bottom-left-wrapper,
+  .bottom-right-wrapper {
+    width: 100%;
+  }
+
+  .upper-right,
+  .bottom-left-wrapper {
+    height: 35vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hizmetlerimiz h3 span,
+  .odalarimiz h3 span,
+  .galeri h3 span {
+    font-size: 3rem;
+  }
+
+  .hizmetlerimiz p {
+    width: 75%;
+    text-align: center;
+  }
+
+  .odalarimiz h3,
+  .hizmetlerimiz h3,
+  .galeri h3 {
+    font-size: 1rem;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-wrapper div {
+    margin-bottom: 2rem;
+  }
+
+  .footer-wrapper h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav select {
+    right: 50%;
+    top: 1%;
+    transform: translateX(50%);
+  }
+
+  .hizmetlerimiz-wrapper,
+  .upper-wrapper,
+  .upper-left,
+  .upper-left-left,
+  .upper-right,
+  .bottom-wrapper,
+  .bottom-left-wrapper,
+  .bottom-right-wrapper,
+  .bottom-right-right-wrapper {
+    gap: 0.2rem;
+  }
+
+  .oda-meta {
+    left: 12%;
+  }
+}
+/* Responsive End */

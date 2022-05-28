@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/415e92f398.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bilem Hotel Beach & Spa</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-wrapper">
+        <nav>
+          <ul>
+            <li><a href="#hakkimizda">HAKKIMIZDA</a></li>
+            <li><a href="#odalarimiz">ODALARIMIZ</a></li>
+            <li><a href="#hizmetlerimiz">HİZMETLERİMİZ</a></li>
+            <li class="logo">
+              <img src="./images/bilem-hotel-logo.png" alt="logo" />
+            </li>
+            <li><a href="#blm-beach">BLM BEACH</a></li>
+            <li><a href="#meyhane">ALAFRANGA</a></li>
+            <li><a href="#iletisim">İLETİŞİM</a></li>
+          </ul>
+          <img
+            src="./images/bilem-hotel-logo.png"
+            alt="logo"
+            class="mobile-logo"
+          />
+          <select name="language" id="language">
+            <option value="tr">TR</option>
+            <option value="en">EN</option>
+            <option value="ru">РУ</option>
+          </select>
+        </nav>
+      </div>
+      <div class="hero-content">
+        <h2>BİLEM HOTEL</h2>
+        <h3>KEYİFLİ TATİLİN <span>ADRESİ</span></h3>
+      </div>
+      <a href="#hakkimizda"><i class="fa-solid fa-angles-down"></i></a>
+    </section>
+
+    <section class="hakkimizda" id="hakkimizda">
+      <img src="./images/stok-photo-hakkimizda.jpg" alt="hakkımızda" />
+      <div class="hakkimizda-wrapper">
+        <h2>BİLEM HOTEL</h2>
+        <h3>Hakkımızda</h3>
+        <p>Bilem Hotel'de denizin komşusu olmaya davetlisiniz.</p>
+        <br />
+        <p>
+          Merkezi konumu ve açık havalarda Olimpos'u bile karşınıza getiren
+          eşsiz manzarasıyla misafirlerine unutulmaz bir deneyim yaşatan Bilem
+          Hotel'de rahatlığın ve huzurun tadıan varacaksınız.
+        </p>
+        <br />
+        <p>
+          Yılın her dönemi Spa ve havuz hizmetlerinden yararlanabilmeniz
+          yanında, yaz aylarında BLM Beach'in serin sularının da keyfini
+          çıkarabilirsiniz.
+        </p>
+        <br />
+        <p>
+          Her gece farklı bir konseptte eğlence planlanan muhteşem Alafranga
+          Restaurant da hemen yanımızda. Bilem Hotel'de ihtiyacınız olan her şey
+          bir arada.
+        </p>
+      </div>
+    </section>
+
+    <section class="odalarimiz" id="odalarimiz">
+      <h3>
+        KONFORLU KONAKLAMA İÇİN <br />
+        <span class="italic">Otel </span>
+        <span class="bold"> Odalarımız</span>
+      </h3>
+      <div class="odalarimiz-wrapper">
+        <div class="oda oda1" id="oda1" onclick="odaClickHandler1()">
+          <p>Deluxe Suite</p>
+          <div class="oda-meta displayNone" id="odaMeta1">
+            <h4>DENİZ MANZARALI</h4>
+            <ul>
+              <li>Çift Kişilik</li>
+              <li>Koltuk</li>
+            </ul>
+          </div>
+        </div>
+        <div class="oda oda2" id="oda2" onclick="odaClickHandler2()">
+          <p>Junior Suite</p>
+          <div class="oda-meta displayNone" id="odaMeta2">
+            <h4>DENİZ MANZARALI</h4>
+            <ul>
+              <li>Çift Kişilik</li>
+              <li>Koltuk</li>
+            </ul>
+          </div>
+        </div>
+        <div class="oda oda3" id="oda3" onclick="odaClickHandler3()">
+          <p>Korner Suite</p>
+          <div class="oda-meta displayNone" id="odaMeta3">
+            <h4>DENİZ MANZARALI</h4>
+            <ul>
+              <li>Çift Kişilik</li>
+              <li>Koltuk</li>
+            </ul>
+          </div>
+        </div>
+        <div class="oda oda4" id="oda4" onclick="odaClickHandler4()">
+          <p>Standart Oda</p>
+          <div class="oda-meta displayNone" id="odaMeta4">
+            <h4>DENİZ MANZARALI</h4>
+            <ul>
+              <li>Çift Kişilik</li>
+              <li>Koltuk</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hizmetlerimiz" id="hizmetlerimiz">
+      <h3>
+        KONFORLU KONAKLAMA İÇİN <br />
+        <span class="italic">Otel </span>
+        <span class="bold"> Hizmetlerimiz</span>
+      </h3>
+      <p class="hizmetlerimiz-p">
+        Lorem ipsum dolor sit amet, consetetur sadipscing, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        coluptua.
+      </p>
+      <div class="hizmetlerimiz-wrapper">
+        <div class="upper-wrapper">
+          <div class="upper-left">
+            <div class="upper-left-left">
+              <div class="left-1"><p>Fitness</p></div>
+              <div class="left-2">
+                <p><span>Kapalı</span><br />Havuz</p>
+              </div>
+            </div>
+            <div class="upper-left-right"><p>Hamam</p></div>
+          </div>
+          <div class="upper-right">
+            <div class="upper-right-1">
+              <p>BLM Beach</p>
+            </div>
+            <div class="upper-right-2">
+              <p>Teras</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-wrapper">
+          <div class="bottom-left-wrapper">
+            <div class="bottom-left-1">
+              <p>Çocuk Havuzu</p>
+            </div>
+            <div class="bottom-left-2">
+              <p>Spa</p>
+            </div>
+          </div>
+          <div class="bottom-right-wrapper">
+            <div class="bottom-right-left">
+              <p>
+                Alafranga <br />
+                Meyhane
+              </p>
+            </div>
+            <div class="bottom-right-right-wrapper">
+              <div class="bottom-right-1">
+                <p>Otopark</p>
+              </div>
+              <div class="bottom-right-2">
+                <p>Bahçe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blm-beach" id="blm-beach">
+      <img src="./images/stok-blm-beach.jpg" alt="blm beach" />
+      <div class="blm-beach-wrapper">
+        <h2>BİLEM HOTEL</h2>
+        <h3>BLM Beach</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nobis
+          sit quam reiciendis ut dolore adipisci sunt recusandae ullam numquam!
+          Perspiciatis ipsum nam quasi iste itaque iusto, laborum voluptates
+          reprehenderit.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          laborum quidem, esse minima ea ipsa velit repellat tempore consequatur
+          qui repellendus natus nemo placeat perspiciatis accusamus itaque
+          blanditiis, voluptas perferendis!
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          rerum inventore placeat deserunt quam explicabo dolor perspiciatis
+          maxime aliquam, cum dignissimos impedit atque quae doloremque illo
+          veniam hic odit modi!
+        </p>
+      </div>
+    </section>
+
+    <section class="meyhane" id="meyhane">
+      <div class="meyhane-wrapper">
+        <h2>BİLEM HOTEL</h2>
+        <h3>Alafranga Meyhane</h3>
+        <p>
+          Muhteşem lezzetlerle manzaranın, müziği ve eğlencenin buluşmasına
+          davetlisiniz. Denizin tam üzerinde, haftanın farklı günlerindeki
+          konseptlerimizle her gecenize bambaşka bir hava katıyoruz.
+        </p>
+        <br />
+        <p>
+          Grup misafirlerimize, özel gün kutlamalarına ve özel etkinliklere
+          uygun alacarte servislerimizle misafirlerimize harika bir deneyim
+          yaşatıyoruz.
+        </p>
+        <br />
+        <p>
+          Alafranga 17:00 - 20:30 arası iş toplantıları, buluşmalar, romantik
+          yemekler için harika bir nokta. 21:00 sonrası eğlence ve müzik ile
+          tempoyu yükseltiyoruz.
+        </p>
+        <br />
+        <p>
+          Hemen rezervasyon yaptırın; lezzet, manzara ve bol eğlencenin keyfini
+          çıkarın.
+        </p>
+      </div>
+      <div class="meyhane-img"></div>
+    </section>
+
+    <section class="galeri" id="galeri">
+      <h3>
+        KONFORLU KONAKLAMA İÇİN <br />
+        <span class="italic">Otel </span>
+        <span class="bold"> Galerisi</span>
+      </h3>
+      <p class="galeri-p">
+        Lorem ipsum dolor sit amet, consetetur sadipscing, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        coluptua.
+      </p>
+      <div class="galeri-wrapper">
+        <img src="./images/stok-galeri-1.jpg" />
+        <img src="./images/stok-galeri-2.webp" />
+        <img src="./images/stok-galeri-3.jpg" />
+      </div>
+    </section>
+
+    <footer id="iletisim">
+      <img src="./images/bilem-hotel-logo.png" alt="logo" />
+      <div class="footer-wrapper">
+        <div>
+          <h3>Adres</h3>
+          <p>Şirinyalı Eski Lara Caddesi</p>
+          <p>Sokak: 1512 No:2, 07160</p>
+          <p>Muratpaşa/Antalya</p>
+        </div>
+        <div>
+          <h3>İletişim</h3>
+          <p>Tel.: +0242 782 4130</p>
+          <p>Fax: +0242 782 4130</p>
+          <p>Mail: info@bilemotel.com</p>
+        </div>
+        <div>
+          <h3>Sosyal</h3>
+          <p>Twitter</p>
+          <p>Instagram</p>
+          <p>Facebook</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
