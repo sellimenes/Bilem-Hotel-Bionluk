@@ -3,9 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
     <script
       src="https://kit.fontawesome.com/415e92f398.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
@@ -26,6 +35,7 @@
             <li><a href="#meyhane">ALAFRANGA</a></li>
             <li><a href="#iletisim">İLETİŞİM</a></li>
           </ul>
+          <i class="fa-solid fa-bars"></i>
           <img
             src="./images/bilem-hotel-logo.png"
             alt="logo"
@@ -41,8 +51,53 @@
       <div class="hero-content">
         <h2>BİLEM HOTEL</h2>
         <h3>KEYİFLİ TATİLİN <span>ADRESİ</span></h3>
+        <div class="rezervasyon-formu">
+          <form action="">
+            <div class="bolge">
+              <label for="bolge">Bölge</label>
+              <div class="bolge-wrapper">
+                <i class="fa-solid fa-location-dot form-icon"></i>
+                <input type="text" placeholder="Seçiniz" />
+              </div>
+            </div>
+            <div class="villa-tipi">
+              <label for="bolge">Villa Tipi</label>
+              <div class="bolge-wrapper">
+                <i class="fa-solid fa-location-dot form-icon"></i>
+                <input type="text" placeholder="Seçiniz" />
+              </div>
+            </div>
+            <div class="giris-cikis">
+              <label for="bolge">Giriş - Çıkış Tarihi</label>
+              <div class="bolge-wrapper">
+                <i class="fa-solid fa-calendar form-icon"></i>
+                <div class="giris-cikis-wrapper">
+                  <div class="giris">
+                    <i class="fa-solid fa-calendar form-icon"></i>
+                    <input type="text" placeholder="Giriş" />
+                  </div>
+                  <div class="cikis">
+                    <i class="fa-solid fa-calendar form-icon"></i>
+                    <input type="text" placeholder="Çıkış" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kisi-sayisi">
+              <label for="bolge">Kişi Sayısı</label>
+              <div class="bolge-wrapper">
+                <i class="fa-solid fa-user form-icon"></i>
+                <input type="text" placeholder="Seçiniz" />
+              </div>
+            </div>
+            <input type="submit" value="ARA" class="submit-button" />
+          </form>
+        </div>
       </div>
-      <a href="#hakkimizda"><i class="fa-solid fa-angles-down"></i></a>
+
+      <a href="#hakkimizda"
+        ><i class="fa-solid fa-angles-down down-arrow"></i
+      ></a>
     </section>
 
     <section class="hakkimizda" id="hakkimizda">
@@ -79,43 +134,63 @@
         <span class="bold"> Odalarımız</span>
       </h3>
       <div class="odalarimiz-wrapper">
-        <div class="oda oda1" id="oda1" onclick="odaClickHandler1()">
+        <div
+          class="oda oda1"
+          id="oda1"
+          onmouseenter="odaClickHandler1()"
+          onmouseleave="odaClickHandler1()"
+        >
           <p>Deluxe Suite</p>
           <div class="oda-meta displayNone" id="odaMeta1">
             <h4>DENİZ MANZARALI</h4>
             <ul>
-              <li>Çift Kişilik</li>
-              <li>Koltuk</li>
+              <li>- Çift Kişilik</li>
+              <li>- Koltuk</li>
             </ul>
           </div>
         </div>
-        <div class="oda oda2" id="oda2" onclick="odaClickHandler2()">
+        <div
+          class="oda oda2"
+          id="oda2"
+          onmouseenter="odaClickHandler2()"
+          onmouseleave="odaClickHandler2()"
+        >
           <p>Junior Suite</p>
           <div class="oda-meta displayNone" id="odaMeta2">
             <h4>DENİZ MANZARALI</h4>
             <ul>
-              <li>Çift Kişilik</li>
-              <li>Koltuk</li>
+              <li>- Çift Kişilik</li>
+              <li>- Koltuk</li>
             </ul>
           </div>
         </div>
-        <div class="oda oda3" id="oda3" onclick="odaClickHandler3()">
+        <div
+          class="oda oda3"
+          id="oda3"
+          onmouseenter="odaClickHandler3()"
+          onmouseleave="odaClickHandler3()"
+        >
           <p>Korner Suite</p>
           <div class="oda-meta displayNone" id="odaMeta3">
             <h4>DENİZ MANZARALI</h4>
             <ul>
-              <li>Çift Kişilik</li>
-              <li>Koltuk</li>
+              <li>- Çift Kişilik</li>
+              <li>- Koltuk</li>
             </ul>
           </div>
         </div>
-        <div class="oda oda4" id="oda4" onclick="odaClickHandler4()">
+        <div
+          class="oda oda4"
+          id="oda4"
+          onmouseenter="odaClickHandler4()"
+          onmouseleave="odaClickHandler4()"
+        >
           <p>Standart Oda</p>
           <div class="oda-meta displayNone" id="odaMeta4">
             <h4>DENİZ MANZARALI</h4>
             <ul>
-              <li>Çift Kişilik</li>
-              <li>Koltuk</li>
+              <li>- Çift Kişilik</li>
+              <li>- Koltuk</li>
             </ul>
           </div>
         </div>
@@ -240,7 +315,7 @@
       <div class="meyhane-img"></div>
     </section>
 
-    <section class="galeri" id="galeri">
+    <!-- <section class="galeri" id="galeri">
       <h3>
         KONFORLU KONAKLAMA İÇİN <br />
         <span class="italic">Otel </span>
@@ -255,6 +330,44 @@
         <img src="./images/stok-galeri-1.jpg" />
         <img src="./images/stok-galeri-2.webp" />
         <img src="./images/stok-galeri-3.jpg" />
+      </div>
+    </section> -->
+
+    <!-- Yeni Galeri -->
+    <section class="galeri" id="galeri">
+      <h3>
+        KONFORLU KONAKLAMA İÇİN <br />
+        <span class="italic">Otel </span>
+        <span class="bold"> Galerisi</span>
+      </h3>
+      <p class="galeri-p">
+        Lorem ipsum dolor sit amet, consetetur sadipscing, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        coluptua.
+      </p>
+      <div class="wrapper-slider">
+        <div class="arrow-left"></div>
+        <div class="arrow-right"></div>
+        <div class="items">
+          <div class="item item1">
+            <img src="./images/stok-galeri-1.jpg" />
+          </div>
+          <div class="item item2">
+            <img src="./images/stok-galeri-3.jpg" />
+          </div>
+          <div class="item item3">
+            <img src="./images/stok-galeri-1.jpg" />
+          </div>
+          <div class="item item4">
+            <img src="./images/stok-galeri-3.jpg" />
+          </div>
+          <div class="item item5">
+            <img src="./images/stok-galeri-1.jpg" />
+          </div>
+          <div class="item item6">
+            <img src="./images/stok-galeri-3.jpg" />
+          </div>
+        </div>
       </div>
     </section>
 
